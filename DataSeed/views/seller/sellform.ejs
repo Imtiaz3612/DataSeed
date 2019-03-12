@@ -1,0 +1,107 @@
+<% include ../partials/header %>
+<div class = "container">
+<form  action="/seller/sell" method="post">
+
+  <div>
+  <h2>Title</h2>
+  <input type="text" name="title" placeholder="title"></div>
+  
+  <div>
+  <h2>Category</h2>
+  <select name="category" >
+ <option>Attorney and Emails </option>
+ <option>Business Information and financial</option>
+ <option>Classroom Datasets</option>
+ <option>Earth Sciences</option>
+ <option>Economic</option>
+ <option>Education</option>
+ <option>Governement </option>
+ <option>Health and Medicine </option>
+ <option>Lead Generation</option>
+ <option>Location Lists</option>
+ <option>Markets</option>
+ <option>Politics</option>
+ <option>Product List</option>
+ <option>Sales and Transaction</option>
+ <option>Social Media audiences</option>
+ <option>Social Sciences</option>
+ <option>Sports</option>
+ <option>Surveys</option>
+  </select>
+  </div>
+  
+  <div>
+  <h2>Description</h2>
+  <textarea rows=15 cols=70 placeholder ="add description of data" name="description"></textarea>
+  </div>
+  
+  <div>
+  <h2>Tags</h2>
+  <input placeholder="tag1,tag2,tag3...." name="tags">
+  </input>
+  </div>
+  
+  <div>
+  <h2>Price</h2>
+  <input type="text" name="price" placeholder="0.00"></input>
+  </div>
+  
+  <div>
+  <h2>Review Rows</h2>
+  
+  <input type="radio" name="rows_" value="10"> 10</input>
+  <input type="radio" name="rows_" value="50"> 50</input>
+  <input type="radio" name="rows_" value="100"> 100</input>
+  </div>
+  
+  <input type="submit"></input>
+</form>
+</div>
+<!--<div class="container">-->
+<!--<form>-->
+<!--  <div class="form-row">-->
+<!--    <div class="form-group col-md-6">-->
+<!--      <label for="inputEmail4">Email</label>-->
+<!--      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">-->
+<!--    </div>-->
+<!--    <div class="form-group col-md-6">-->
+<!--      <label for="inputPassword4">Password</label>-->
+<!--      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label for="inputAddress">Address</label>-->
+<!--    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <label for="inputAddress2">Address 2</label>-->
+<!--    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">-->
+<!--  </div>-->
+<!--  <div class="form-row">-->
+<!--    <div class="form-group col-md-6">-->
+<!--      <label for="inputCity">City</label>-->
+<!--      <input type="text" class="form-control" id="inputCity">-->
+<!--    </div>-->
+<!--    <div class="form-group col-md-4">-->
+<!--      <label for="inputState">State</label>-->
+<!--      <select id="inputState" class="form-control">-->
+<!--        <option selected>Choose...</option>-->
+<!--        <option>...</option>-->
+<!--      </select>-->
+<!--    </div>-->
+<!--</div>    -->
+<!--    <div class="form-group col-md-2">-->
+<!--      <label for="inputZip">Zip</label>-->
+<!--      <input type="text" class="form-control" id="inputZip">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="form-group">-->
+<!--    <div class="form-check">-->
+<!--      <input class="form-check-input" type="checkbox" id="gridCheck">-->
+<!--      <label class="form-check-label" for="gridCheck">-->
+<!--        Check me out-->
+<!--      </label>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <button type="submit" class="btn btn-primary">Sign in</button>-->
+<!--</form>-->

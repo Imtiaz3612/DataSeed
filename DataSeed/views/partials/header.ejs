@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome</title>
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">DATA SEED</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <%if(user){%>
+                <a class="btn btn-default" href="/users/logout">logout</a>
+              <%}else{%>
+                <a class="btn btn-lg btn-default" href="/users/login">login</a>
+                <a class="btn btn-lg btn-default" href="/users/register/buyer">Register As Buyer</a>
+                <a class="btn btn-lg btn-default" href="/users/register/seller">Become A Seller</a>
+                <%}%>
+          </ul>
+          <a href="/general" class="btn btn-primary">Show Categories</a>
+
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
