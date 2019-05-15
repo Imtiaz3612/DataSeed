@@ -25,7 +25,21 @@ var UserSchema = mongoose.Schema({
 	},
 	as:{
 		type:String
+	},
+	institution:{
+		type:String
+	},
+	education:{
+		type:String
+		
+	},
+	proffession:{
+		type:String
+	},
+	country:{
+		type:String
 	}
+	
 });
 
 var User = module.exports = mongoose.model('User', UserSchema);

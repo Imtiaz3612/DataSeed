@@ -29,7 +29,17 @@ var dataSchema = mongoose.Schema({
 	},
 	rows_:{
 	    type:Number
-	}
+	},
+	filepath:{
+		type:String
+	},
+	reviews:[{
+		type:String
+	}],
+	acceptedtokens:[{
+			type:String
+		}]
+	
 });
 
 var data = module.exports = mongoose.model('data', dataSchema);
