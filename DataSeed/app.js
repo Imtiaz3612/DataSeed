@@ -107,6 +107,7 @@ app.get('*', function(req, res, next){
 
 
 
+
 app.use('/', routes);
 app.use('/users', users);
 app.use('/buyer',buyer);
@@ -190,7 +191,10 @@ io.sockets.on('connection',function(socket){//everytime a user connects has its 
 
 //////////////////////////////
 
-
+app.get('*', function(req, res) {
+ res.render('notfound.ejs');
+    // return res.redirect('/');
+});
 
 // listen
 http.listen(process.env.PORT || 3000, () => {
